@@ -5,7 +5,7 @@ import datetime as dt
 
 class StopWatch:
     def __init__(self, window):
-        self.T = tk.Label(window, text='00:00:00', font=('times', 20, 'bold'), bg='white', fg='black')
+        self.T = tk.Label(window, text='00:00:00', font=('times', 20, 'bold'), bg='black' fg='white')
         self.T.pack(fill=tk.BOTH, expand=1)
         self.elapsedTime = dt.datetime(1, 1, 1)
         self.running = False
